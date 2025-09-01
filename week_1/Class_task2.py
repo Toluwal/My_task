@@ -130,15 +130,41 @@
 #    6. Ask for an amount (if applicable) and store it as a number using type casting.
 #    7. Display a final message summarizing the transaction
 
+# print("Welcome to GTB")
+# ussd_code = "*737#"
+# password = "1234"
+# ussd_code = int(input(" dial ussd code: "))
+# Data_plans = str(input("1.Data plans\n2.Business plans\n3.Roaming/Int'l\n4.Borrow Credit/Recharge"))
+# DataPlans = "1"
+# BusinessPlans = "2"
+# Roaming = "3"
+# BorrowCredit= "4"
+# option = int(input("Enter your preferred option:"))
+# str(input("1. daily \n2. 2-3 Days\n3.Weekly\n4.Monthly"))
+# print(f"data plans: {Data_plans}\noption: {option}")
+# amount = int(input("amount: "))
+# print("Thank you for suscribing")
+
+
 print("Welcome to GTB")
-ussd_code = int(input(" dial ussd code: "))
-Data_plans = str(input("1.Data plans\n2.Business plans\n3.Roaming/Int'l\n4.Borrow Credit/Recharge"))
-DataPlans = "1"
-BusinessPlans = "2"
-Roaming = "3"
-BorrowCredit= "4"
-option = int(input("Enter your preferred option:"))
-str(input("1. daily \n2. 2-3 Days\n3.Weekly\n4.Monthly"))
-print(f"data plans: {Data_plans}\noption: {option}")
-amount = int(input("amount: "))
+code = "*737#"
+passcode = "1234"
+ussd_code = (input(" dial ussd code: "))
+if ussd_code ==code:
+    print("1.Data plans\n2.Business plans\n3.Roaming/Int'l\n4.Borrow Credit/Recharge")
+    choice = input("Enter your prefered option?: ")
+    if choice == "1":
+        print("1. daily \n2. 2-3 Days\n3.Weekly\n4.Monthly")
+        dataplan_choice = input("What is your preferred option: ")
+        if dataplan_choice == "1":
+            amount = input("Enter the amount: ")
+            password = input("Enter your password: ")
+            if password == passcode:
+                print("You have successfuly bought a daily data bundle.")
+            else:
+                print("invalid password.")
+        else:
+            print("Invalid input. Please enter the correct option")        
+else:
+    print("Dial *737# to access GTB ussd platform")
 print("Thank you for suscribing")
