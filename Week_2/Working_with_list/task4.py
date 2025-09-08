@@ -94,19 +94,19 @@
 # - Reverse the word using slicing
 
 
-word =str(input("Enter your favourite city: "))
-print("Length of word: ", len(word))
+# word =str(input("Enter your favourite city: "))
+# print("Length of word: ", len(word))
 
-if word.isupper():
-    print("The word is in UPPERCASE.")
-elif word.islower():
-    print("The word is in lowercase.")
-elif word.istitle():
-    print("The word is in Title Case.")
-else:
-    print("The word has mixed case.")
+# if word.isupper():
+#     print("The word is in UPPERCASE.")
+# elif word.islower():
+#     print("The word is in lowercase.")
+# elif word.istitle():
+#     print("The word is in Title Case.")
+# else:
+#     print("The word has mixed case.")
 
-print("Reversed word:", word[::-1])
+# print("Reversed word:", word[::-1])
 
 # **Task 7: List Manipulation**
 # - Create a list of five cities.
